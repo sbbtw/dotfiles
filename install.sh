@@ -24,6 +24,9 @@ install_packages system
 install_packages core
 install_packages fonts
 
+xdg-user-dirs-update
+xdg-user-dirs-gtk-update
+
 if [[ "$1" == "i3" ]]; then
     echo "Installing i3 packages..."
     install_packages i3
