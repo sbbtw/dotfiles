@@ -37,3 +37,4 @@ fi
 ln -sf "$SCRIPT_DIR/configs/nvim" ~/.config/nvim
 ln -sf "$SCRIPT_DIR/configs/tmux/.tmux.conf" ~/.tmux.conf
 setup_tmux
+ln -sf "$SCRIPT_DIR/configs/alacritty" ~/.config/alacritty
