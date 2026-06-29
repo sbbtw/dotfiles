@@ -1,0 +1,17 @@
+xorg
+xorg-xinit
+i3-wm
+dmenu
+i3status
+i3lock
+xss-lock
+network-manager-applet
+picom
+feh
+papirus-icon-theme
+dunst
+libnotify
+flameshot
+xclip
+lxsession
+rofi

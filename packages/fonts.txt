@@ -1,0 +1,13 @@
+ttf-jetbrains-mono-nerd
+ttf-cascadia-mono-nerd
+ttf-hack-nerd
+noto-fonts
+noto-fonts-emoji
+noto-fonts-extra
+noto-fonts-cjk
+ttf-dejavu
+ttf-liberation
+ttf-roboto
+gnu-free-fonts
+adobe-source-sans-fonts 
+adobe-source-serif-fonts 
