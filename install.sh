@@ -12,6 +12,14 @@ install_packages() {
     sudo pacman -S --needed $(<"$SCRIPT_DIR/packages/${name}.txt")
 }
 
+setup_tmux() {
+  mkdir -p ~/.tmux/plugins
+
+  if [[ ! -d ~/.tmux/plugins/tpm ]]; then
+    git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+  fi
+}
+
 install_packages system
 install_packages core
 install_packages fonts
@@ -23,6 +31,9 @@ if [[ "$1" == "i3" ]]; then
     ln -sf "$SCRIPT_DIR/configs/x11/.Xresources" ~/.Xresources
     ln -sf "$SCRIPT_DIR/configs/i3" ~/.config/i3
     ln -sf "$SCRIPT_DIR/configs/picom" ~/.config/picom
+    ln -sf "$SCRIPT_DIR/configs/flameshot" ~/.config/flameshot
 fi
 
 ln -sf "$SCRIPT_DIR/configs/nvim" ~/.config/nvim
+ln -sf "$SCRIPT_DIR/configs/tmux/.tmux.conf" ~/.tmux.conf
+setup_tmux
