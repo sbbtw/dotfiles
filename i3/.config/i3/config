@@ -220,5 +220,7 @@ bar {
 bindsym Mod4+Shift+s exec flameshot gui
 
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
+
+exec --no-startup-id flameshot 
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallhaven-pojl63.png
 exec --no-startup-id lxpolkit

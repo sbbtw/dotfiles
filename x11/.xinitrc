@@ -1,3 +1,3 @@
 /usr/lib/xdg-desktop-portal-gtk &
 xrdb -merge ~/.Xresources
-exec i3
+exec dbus-run-session i3
