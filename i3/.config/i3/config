@@ -21,6 +21,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 exec --no-startup-id nm-applet
 for_window [class="^.*"] border pixel 1
+for_window [class="vicinae"] border pixel 0
+# default_border pixel 1
+for_window [window_role="pop-up|bubble|dialog|task_dialog|tooltip"] border pixel 0
 hide_edge_borders smart
 for_window [floating] move position center
 
@@ -54,7 +57,8 @@ bindsym Mod4+Return exec alacritty
 bindsym Mod4+q kill
 
 # start dmenu (a program launcher)
-bindsym Mod4+space exec --no-startup-id dmenu_run -l 5
+# bindsym Mod4+space exec --no-startup-id dmenu_run -l 5
+bindsym Mod4+space exec --no-startup-id vicinae toggle
 bindsym Mod4+b exec google-chrome-stable
 bindsym Mod4+o exec obsidian
 
@@ -216,3 +220,4 @@ exec --no-startup-id flameshot
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallhaven-pojl63.png
 exec --no-startup-id lxpolkit
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec vicinae server
