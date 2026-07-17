@@ -27,11 +27,12 @@ install_packages fonts
 xdg-user-dirs-update
 xdg-user-dirs-gtk-update
 
+ln -sf "$SCRIPT_DIR/configs/x11/.xinitrc" ~/.xinitrc
+ln -sf "$SCRIPT_DIR/configs/x11/.Xresources" ~/.Xresources
+
 if [[ "$1" == "i3" ]]; then
     echo "Installing i3 packages..."
     install_packages i3
-    ln -sf "$SCRIPT_DIR/configs/x11/.xinitrc" ~/.xinitrc
-    ln -sf "$SCRIPT_DIR/configs/x11/.Xresources" ~/.Xresources
     ln -sf "$SCRIPT_DIR/configs/i3" ~/.config/i3
     ln -sf "$SCRIPT_DIR/configs/picom" ~/.config/picom
     ln -sf "$SCRIPT_DIR/configs/flameshot" ~/.config/flameshot
