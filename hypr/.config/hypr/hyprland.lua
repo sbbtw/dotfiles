@@ -11,7 +11,8 @@ hl.monitor({
 
 local terminal = "alacritty"
 local fileManager = "dolphin"
-local menu = "wofi --show drun"
+-- local menu = "wofi --show drun"
+local menu = "vicinae toggle"
 
 hl.on("hyprland.start", function()
 	hl.exec_cmd("systemctl --user start hyprland-session.target")
@@ -19,6 +20,8 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("nm-applet")
 	hl.exec_cmd("hyprpaper")
 	hl.exec_cmd("waybar")
+	hl.exec_cmd("vicinae server")
+	hl.exec_cmd("hypridle")
 end)
 hl.on("hyprland.shutdown", function()
 	os.execute("systemctl --user stop hyprland-session.target && sleep 0.1")
@@ -205,6 +208,7 @@ hl.bind(
 	mainMod .. " + M",
 	hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
 )
+hl.bind(mainMod .. " + SHIFT + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(menu))

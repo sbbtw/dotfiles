@@ -1,0 +1,6 @@
+hyprland
+waybar
+hyprpaper
+hyprshot
+xdg-desktop-portal-hyprland
+hyprpolkitagent
