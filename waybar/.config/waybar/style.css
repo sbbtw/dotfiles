@@ -7,37 +7,33 @@
 
 window#waybar {
   background: #111111;
-  color: #eceff4;
+  color: #dce3f0;
 }
 
 #workspaces {
-  margin: 0 2px;
 }
 
 #workspaces button {
-  padding: 0 4px;
-  margin: 0;
-  color: #6c7086;
+  padding: 0 6px;
+  color: #6b7280;
+  transition: all 0.2s ease;
   border-bottom: 2px solid transparent;
-}
-
-#workspaces button.active {
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
 }
 
 #workspaces button:hover {
-  background: #222222;
-  color: #ffffff;
+  background: #1b1f2a;
+  color: #cdd6f4;
+}
+
+#workspaces button.active {
+  color: #7aa2f7;
+  background: #1b1f2a;
+  border-bottom: 2px solid #7aa2f7;
 }
 
 #window {
-  margin-left: 5px;
-  color: #d8dee9;
-}
-
-#clock {
-  border-bottom: 2px solid transparent;
+  margin-left: 8px;
+  color: #c0caf5;
 }
 
 #clock,
@@ -47,31 +43,61 @@ window#waybar {
 #network,
 #pulseaudio,
 #tray {
-  padding: 0 8px;
-  margin-right: 8px;
+  padding: 0 10px;
+  margin: 4px;
+  color: #dce3f0;
+  background: transparent;
+  border-radius: 8px;
+}
+
+#clock {
+  color: #7aa2f7;
+}
+
+#cpu {
+  color: #9ece6a;
+}
+
+#memory {
+  color: #e0af68;
+}
+
+#network {
+  color: #7dcfff;
+}
+
+#pulseaudio {
+  color: #bb9af7;
 }
 
 #tray {
-  padding-right: 10px;
+  margin-right: 6px;
+}
+
+#battery {
+  color: #dce3f0; /* normal color */
 }
 
 #battery.warning {
   color: #f9c74f;
 }
-
 #battery.critical {
   color: #ef4444;
 }
-
 #battery.charging {
   color: #22c55e;
 }
+#battery.charging.warning {
+  color: orange;
+}
 
 tooltip {
-  background: #111111;
-  color: #eceff4;
+  background: #181c24;
+  color: #dce3f0;
+  border: 1px solid #2a2f3a;
+  border-radius: 8px;
 }
 
 tooltip label {
-  padding: 0 6px;
+  padding: 6px 8px;
 }
