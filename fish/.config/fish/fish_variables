@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR THEME_EDEN_PROMPT_CHAR:\u00bb
 SETUVAR __fish_initialized:4300
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_check_for_new_release:false
