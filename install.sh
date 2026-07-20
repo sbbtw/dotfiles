@@ -38,6 +38,11 @@ if [[ "$1" == "i3" ]]; then
     ln -sf "$SCRIPT_DIR/configs/flameshot" ~/.config/flameshot
 fi
 
+if [[ "$1" == "hyprland" ]]; then
+    echo "Installing i3 packages..."
+    install_packages hyprland
+fi
+
 ln -sf "$SCRIPT_DIR/configs/nvim" ~/.config/nvim
 ln -sf "$SCRIPT_DIR/configs/tmux/.tmux.conf" ~/.tmux.conf
 setup_tmux

@@ -1,3 +1,27 @@
+/*
+*
+* Base16 Tomorrow Night
+* Author: Chris Kempson (http://chriskempson.com)
+*
+*/
+
+@define-color base00 #1d1f21;
+@define-color base01 #282a2e;
+@define-color base02 #373b41;
+@define-color base03 #969896;
+@define-color base04 #b4b7b4;
+@define-color base05 #c5c8c6;
+@define-color base06 #e0e0e0;
+@define-color base07 #ffffff;
+@define-color base08 #cc6666;
+@define-color base09 #de935f;
+@define-color base0A #f0c674;
+@define-color base0B #b5bd68;
+@define-color base0C #8abeb7;
+@define-color base0D #81a2be;
+@define-color base0E #b294bb;
+@define-color base0F #a3685a;
+
 * {
   border: none;
   border-radius: 0;
@@ -7,9 +31,9 @@
 }
 
 window#waybar {
-  background: #111111;
-  color: #dce3f0;
-  border-top: 2px solid #2b2f36;
+  background: @base00;
+  color: @base05;
+  border-top: 2px solid @base01;
 }
 
 #workspaces {
@@ -18,29 +42,30 @@ window#waybar {
 
 #workspaces button {
   padding: 0 2px;
-  color: #6b7280;
+  color: @base03;
   transition: all 0.2s ease;
   border-bottom: 2px solid transparent;
 }
 
 #workspaces button:hover {
-  background: #1b1f2a;
-  color: #cdd6f4;
+  background: @base01;
+  color: @base06;
 }
 
 #workspaces button.active {
-  color: #7aa2f7;
-  background: #1b1f2a;
-  border-bottom: 2px solid #7aa2f7;
+  color: @base0D;
+  background: @base01;
+  border-bottom: 2px solid @base0D;
 }
+
 #workspaces button.urgent {
-  background: #ff5555;
-  color: #ffffff;
+  background: @base08;
+  color: @base07;
 }
 
 #window {
   margin-left: 8px;
-  color: #c0caf5;
+  color: @base06;
   padding-top: 2px;
 }
 
@@ -51,30 +76,30 @@ window#waybar {
 #network,
 #pulseaudio,
 #tray {
-  padding: 0px 10px;
-  color: #dce3f0;
+  padding: 0 10px;
+  color: @base05;
   background: transparent;
   padding-top: 2px;
 }
 
 #clock {
-  color: #7aa2f7;
+  color: @base0D;
 }
 
 #cpu {
-  color: #9ece6a;
+  color: @base0B;
 }
 
 #memory {
-  color: #e0af68;
+  color: @base0A;
 }
 
 #network {
-  color: #7dcfff;
+  color: @base0C;
 }
 
 #pulseaudio {
-  color: #bb9af7;
+  color: @base0E;
 }
 
 #tray {
@@ -83,25 +108,28 @@ window#waybar {
 }
 
 #battery {
-  color: #dce3f0; /* normal color */
+  color: @base05;
 }
 
 #battery.warning {
-  color: #f9c74f;
+  color: @base0A;
 }
+
 #battery.critical {
-  color: #ef4444;
+  color: @base08;
 }
+
 #battery.charging {
-  color: #22c55e;
+  color: @base0B;
 }
+
 #battery.charging.warning {
-  color: orange;
+  color: @base09;
 }
 
 tooltip {
-  background: #181c24;
-  color: #dce3f0;
+  background: @base01;
+  color: @base06;
 }
 
 tooltip label {
