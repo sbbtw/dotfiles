@@ -25,9 +25,9 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "Hack Nerd Font";
   font-size: 12px;
-  min-height: 0;
+  min-height: 0px;
 }
 
 window#waybar {

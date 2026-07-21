@@ -99,23 +99,15 @@
 return {
 	"bradcush/nvim-base16",
 	config = function()
-		vim.cmd("colorscheme base16-tomorrow-night")
+		vim.cmd("colorscheme base16-gruvbox-dark-hard")
 		local transparent = {
 			"Normal",
 			"NormalNC",
 			"NormalFloat",
 			"FloatBorder",
-			"SignColumn",
-			"FoldColumn",
-			"LineNr",
-			"CursorLineNr",
-			"EndOfBuffer",
-			"Pmenu",
-			"PmenuSel",
 		}
-
 		for _, group in ipairs(transparent) do
-			vim.api.nvim_set_hl(0, group, { bg = "NONE", ctermbg = "NONE" })
+			vim.api.nvim_set_hl(0, group, { bg = "NONE" })
 		end
 	end,
 }
