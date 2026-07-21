@@ -2,5 +2,7 @@ hyprland
 waybar
 hyprpaper
 hyprshot
+hyprlock
+hyprshutdown
 xdg-desktop-portal-hyprland
 hyprpolkitagent
